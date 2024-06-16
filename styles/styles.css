@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+  
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.title {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.sections {
+    margin-bottom: 120px;
+}
+
+.h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.images {
+    margin-bottom: 60px;
+}
+
+.projects {
+    margin-bottom: 60px;
+}
+
+.display-4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+#pitchModalLabel {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+#pitchButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    background-color: black;
+    border-color: black;
+}
+
+#work {
+    margin-right: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#modaltrigger {
+    margin-bottom: 30px;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    font-weight: 1000;
+    color: black;
+}
+
+#pitchButton:hover {
+    background-color: #4D4D4D; /* Change to your desired color */
+    border-color: #4D4D4D; /* Change to your desired color */
+    color: white; /* Text color on hover */
+}
+
+.lead {
+    font-size: 1.4em
+}
+
+.below {
+    font-size: 1.2em;
+}
+
+.carousel-item img {
+    max-height:71vh;
+    object-fit: cover;
+}
+
+footer {
+    font-family: 'Lato', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+footer p {
+    display: inline-block; 
+}
+
+.brandname {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.project-image {
+    height: 100% !important ;
+    width: 100% !important;
+    object-fit:cover;
+}
+
+.col-md-5 {
+    max-height:55vh;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .lead {
+        font-size: 1.2rem;
+    }
+
+    .below {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        font-size: 1.2rem;
+    }
+}
+
+/* Phone */
+@media (max-width: 768px) {
+
+    .lead {
+        font-size: 20px;
+    }
+
+    .below {
+        font-size: 16px;
+    }
+
+    .navbar-toggler {
+        font-size: 16px;
+    }
+
+    .carousel-item img {
+        max-height: 23vh;
+        object-fit:cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-container {
+      flex-wrap: wrap;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+  }

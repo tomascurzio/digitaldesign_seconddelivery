@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Padding</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">The Padding</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Privacy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Resources</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/graph1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/graph2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Main Content -->
+<main class="container">
+    <!-- Title -->
+    <div class="title text-start">
+            <h1 class="display-4">We tell stories with data</h1>
+            <p class="lead"><i>The Padding</i> is a <i>Buenos Aires</i> based digital publication that tells stories based on three axis:</p>
+    </div>
+
+    <!-- 3 sections -->
+    <div class="sections row text-center">
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <h3 class="h3">Data</h3>
+            <p class="lead below">We use information and data obtained from different sources to make stories about them.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <h3 class="h3">Design</h3>
+            <p class="lead below">Our team of designers is always making sure that our stories are made for everyone.</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-12 mb-4">
+            <h3 class="h3">Visualization</h3>
+            <p class="lead below ">We believe that the best way to tell stories is using graphs, and that's how we do it.</p>
+        </div> 
+    </div>
+
+    <!-- Projects -->
+    <div class="projects text-center">
+        <h1 class="h1">Have a Look at Our Projects</h1>
+        <p class="lead">For the past 5 years, we have been working with many developers, journalists and designers to make world-changing stories for you:</p>
+    </div>
+
+    <!-- Projects Images -->
+    <div class="images row justify-content-center">
+        <div class="col-md-5" id="firstimage"> 
+            <a href="images/img1.png" data-lightbox="gallery" data-title="Image 1 ">
+                <img class="img-fluid rounded img-thumbnail project-image" src="images/img1.png" alt="photo 1">
+            </a>
+        </div>
+        <div class="col-md-5">
+            <a href="images/img2.png" data-lightbox="gallery" data-title="image 2">
+                <img class="img-fluid rounded img-thumbnail project-image" src="images/img2.png" alt="photo 2">
+            </a>
+        </div>
+    </div>
+    
+    <!-- Modal Trigger -->
+    <div class="d-flex justify-content-center align-items-center mt-5" id="modaltrigger">
+        <p class="lead mb-0" id="work"><i>Want to work with us?</i></p>
+        <button type="button" class="btn btn-primary" id="pitchButton" data-bs-toggle="modal" data-bs-target="#pitchModal">
+            Pitch your story
+        </button>
+    </div>
+</main>
+
+<!-- Modal Structure -->
+<div class="modal fade" id="pitchModal" tabindex="-1" aria-labelledby="pitchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pitchModalLabel">Pitch Your Story</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label class="form-label" for="userName">Name</label>
+                        <input class="form-control form-control-md" type="text" required pattern="[a-zA-Z ]+" placeholder="John Doe" id="userName" name="userName">
+                        <div class="valid-feedback">This field is ok</div>
+                        <div class="invalid-feedback">The name field is wrong</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="userEmail" class="form-label">Email</label>
+                        <input class="form-control form-control-md" type="email" required placeholder="info@mymail.com" id="userEmail" name="userEmail">
+                        <div class="valid-feedback">The email is ok</div>
+                        <div class="invalid-feedback">The email is wrong. Please check the format</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="comment">Brief summary of the idea</label>
+                        <textarea class="form-control form-control-md" id="comment" name="comment" required></textarea>
+                    </div>
+
+                    <button class="btn btn-info" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    lightbox.option({
+        'wrapAround': true,
+        'albumLabel': "Imagen %1 de %2"
+    });
+
+    (() => {
+        'use strict'
+
+        const forms = document.querySelectorAll('.needs-validation')
+
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                event.preventDefault(); 
+                if (!form.checkValidity()) {
+                    event.stopPropagation();
+                } else {
+                    const modal = bootstrap.Modal.getInstance(document.getElementById('pitchModal'));
+                    modal.hide();
+
+                    form.reset();
+                    form.classList.remove('was-validated');
+                }
+                form.classList.add('was-validated');
+            }, false)
+        })
+    })()
+</script>
+
+
+</body>
+
+<!-- Footer -->
+<footer class="text-center py-4 mt-4">
+    <div class="container">
+        <p class="mb-1">© 2024</p>
+        <p class="mb-1 brandname">The Padding.</p>
+        <p class="mb-1">All rights reserved. Made by</p>
+        <p class="mb-1 brandname">Tomás Curzio.</p>
+    </div>
+</footer>
+
+
+</html>
+
