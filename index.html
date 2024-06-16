@@ -18,7 +18,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-md navbar-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">The Padding</a>
+      <a class="navbar-brand" href="index.html">The Padding</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,13 +28,13 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Our Team</a>
+            <a class="nav-link" href="#">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Privacy</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Our Resources</a>
+            <a class="nav-link" href="#">Resources</a>
           </li>
         </ul>
       </div>
@@ -73,15 +73,15 @@
 
     <!-- 3 sections -->
     <div class="sections row text-center">
-        <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4">
             <h3 class="h3">Data</h3>
             <p class="lead below">We use information and data obtained from different sources to make stories about them.</p>
         </div>
-        <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4">
             <h3 class="h3">Design</h3>
             <p class="lead below">Our team of designers is always making sure that our stories are made for everyone.</p>
         </div>
-        <div class="col-lg-4 col-md-12 col-12 mb-4">
+        <div class="col-lg-4 col-md-12 mb-4">
             <h3 class="h3">Visualization</h3>
             <p class="lead below ">We believe that the best way to tell stories is using graphs, and that's how we do it.</p>
         </div> 
@@ -95,20 +95,58 @@
 
     <!-- Projects Images -->
     <div class="images row justify-content-center">
-        <div class="col-md-5" id="firstimage"> 
-            <a href="images/img1.png" data-lightbox="gallery" data-title="Image 1 ">
-                <img class="img-fluid rounded img-thumbnail project-image" src="images/img1.png" alt="photo 1">
+        <div class="col-md-5 mb-4" id="firstimage"> 
+            <a href="images/img1.png" data-lightbox="gallery" data-title="Maria era el nombre más popular hace 100 años">
+                <img class="img-fluid rounded img-thumbnail project-image" src="images/img1.png" alt="A graph depicting the variation of name popularity in Argentina">
             </a>
         </div>
-        <div class="col-md-5">
-            <a href="images/img2.png" data-lightbox="gallery" data-title="image 2">
-                <img class="img-fluid rounded img-thumbnail project-image" src="images/img2.png" alt="photo 2">
+        <div class="col-md-5 mb-4">
+            <a href="images/img2.png" data-lightbox="gallery" data-title="Rise of the percentage of films that pass the Bechdel Test">
+                <img class="img-fluid rounded img-thumbnail project-image" src="images/img2.png" alt="A graph depicting the Rise of the percentage of films that pass the Bechdel Test">
             </a>
+        </div>
+    </div>
+
+    <!-- Team -->
+    <div class="team text-center">
+        <h1 class="h1">Meet our leads</h1>
+        <p class="lead">We created <i>The Padding</i> 5 years ago in order to create a better informed world. This is who we are:</p>
+    </div>
+
+    <!-- Team members -->
+    <div class="team-members images row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-4 team-members-gallery text-center"> 
+            <div class="img">
+                <a href="images/person1.png" data-lightbox="gallery" data-title="Jane Anderson - Designer">
+                    <img class="img-fluid rounded-circle project-image" src="images/person1.png" alt="Jane Anderson - Designer">
+                </a>
+            </div>
+            <h5 class="h5">Jane Anderson</h3>
+            <p class="lead below">Designer</p>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 team-members-gallery text-center">
+            <div class="img">
+                <a href="images/person2.png" data-lightbox="gallery" data-title="Emma Martin - Journalist">
+                    <img class="img-fluid rounded-circle project-image" src="images/person2.png" alt="Emma Martin - Journalist">
+                </a>
+            </div>
+            <h5 class="h5">Emma Martin</h3>
+            <p class="lead below">Journalist</p>
+
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 team-members-gallery text-center">
+            <div class="img">
+                <a href="images/person3.png" data-lightbox="gallery" data-title="David Moore - Developer">
+                    <img class="img-fluid rounded-circle project-image" src="images/person3.png" alt="David Moore - Developer">
+                </a>
+            </div>
+            <h5 class="h5">David Moore</h3>
+            <p class="lead below">Developer</p>
         </div>
     </div>
     
     <!-- Modal Trigger -->
-    <div class="d-flex justify-content-center align-items-center mt-5" id="modaltrigger">
+    <div class="d-flex justify-content-center align-items-center" id="modaltrigger">
         <p class="lead mb-0" id="work"><i>Want to work with us?</i></p>
         <button type="button" class="btn btn-primary" id="pitchButton" data-bs-toggle="modal" data-bs-target="#pitchModal">
             Pitch your story
@@ -145,12 +183,24 @@
                         <textarea class="form-control form-control-md" id="comment" name="comment" required></textarea>
                     </div>
 
-                    <button class="btn btn-info" type="submit">Send</button>
+                    <button class="btn btn-info" id="sendButton" type="submit">Send</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+</body>
+
+<!-- Footer -->
+<footer class="text-center py-4 mt-4">
+    <div class="container">
+        <p class="mb-1">© 2024</p>
+        <p class="mb-1 brandname">The Padding.</p>
+        <p class="mb-1">All rights reserved. Made by</p>
+        <p class="mb-1 brandname">Tomás Curzio.</p>
+    </div>
+</footer>
 
 <script>
     lightbox.option({
@@ -181,19 +231,4 @@
     })()
 </script>
 
-
-</body>
-
-<!-- Footer -->
-<footer class="text-center py-4 mt-4">
-    <div class="container">
-        <p class="mb-1">© 2024</p>
-        <p class="mb-1 brandname">The Padding.</p>
-        <p class="mb-1">All rights reserved. Made by</p>
-        <p class="mb-1 brandname">Tomás Curzio.</p>
-    </div>
-</footer>
-
-
 </html>
-

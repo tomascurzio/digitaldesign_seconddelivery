@@ -17,46 +17,52 @@ body {
 
 .title {
     margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 .sections {
     margin-bottom: 120px;
 }
 
-.h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-}
-
 .images {
+    margin-bottom: 120px;
+}
+
+.projects,
+.team,
+#modaltrigger {
     margin-bottom: 60px;
 }
 
-.projects {
-    margin-bottom: 60px;
-}
-
-.display-4 {
+.display-4,
+.h3,
+#pitchModalLabel,
+.h1,
+.brandname {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
 
-.h3 {
+.h5 {
+    margin-top: 25px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: 600;
 }
 
-#pitchModalLabel {
+#pitchButton,
+#sendButton {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
 }
 
-#pitchButton {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    background-color: black;
-    border-color: black;
+#pitchButton:hover,
+#sendButton:hover {
+    background-color: #4D4D4D; 
+    border-color: #4D4D4D; 
+    color: #fff;
 }
 
 #work {
@@ -65,19 +71,14 @@ body {
     font-size: 1.2em;
 }
 
-#modaltrigger {
-    margin-bottom: 30px;
-}
-
 .navbar-nav .nav-item.active .nav-link {
     font-weight: 1000;
     color: black;
 }
 
-#pitchButton:hover {
-    background-color: #4D4D4D; /* Change to your desired color */
-    border-color: #4D4D4D; /* Change to your desired color */
-    color: white; /* Text color on hover */
+.navbar-nav .nav-item:hover {
+    font-weight: 600;
+    color: black;
 }
 
 .lead {
@@ -103,11 +104,6 @@ footer p {
     display: inline-block; 
 }
 
-.brandname {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-}
-
 .project-image {
     height: 100% !important ;
     width: 100% !important;
@@ -118,32 +114,35 @@ footer p {
     max-height:55vh;
 }
 
-/* Tablet */
+.team-members-gallery {
+    max-height:30vh;
+    max-width:30vh;
+}
+
+.col-md-5 {
+    max-height:55vh;
+}
+
 @media (max-width: 991px) {
-    .display-4 {
-        font-size: 2.5rem;
-    }
-
-    h3 {
-        font-size: 1.8rem;
-    }
-
     .lead {
-        font-size: 1.2rem;
+        font-size: 25px;
     }
 
     .below {
-        font-size: 1rem;
+        font-size: 20px;
     }
 
     .navbar-toggler {
-        font-size: 1.2rem;
+        font-size: 20px;
+    }
+
+    .carousel-item img {
+        max-height: 40vh;
+        object-fit:cover;
     }
 }
 
-/* Phone */
 @media (max-width: 768px) {
-
     .lead {
         font-size: 20px;
     }
@@ -161,27 +160,3 @@ footer p {
         object-fit:cover;
     }
 }
-
-@media screen and (max-width: 768px) {
-    .image-container {
-      flex-wrap: wrap;
-    }
-
-    .image-container img {
-      max-width: 100%;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    body {
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 70px;
-    }
-
-    h2 {
-        font-size: 50px;
-    }
-  }
