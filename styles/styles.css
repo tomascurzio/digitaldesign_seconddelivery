@@ -49,6 +49,10 @@ body {
     font-weight: 600;
 }
 
+.mb-6 {
+    margin-bottom: 5rem;
+}
+
 #pitchButton,
 #sendButton {
     font-family: 'Montserrat', sans-serif;
